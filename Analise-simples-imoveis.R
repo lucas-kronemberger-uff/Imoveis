@@ -4,4 +4,4 @@
 library(tidyverse)
 
 #Leitura do banco de dados:
-dados = read.csv("imoveis.csv")
+dados = read.csv2("imoveis.csv")
