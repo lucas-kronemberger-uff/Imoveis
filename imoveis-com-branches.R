@@ -1,11 +1,13 @@
 # 1 - Leitura do banco de dados:
 
 dados = read.csv2("imoveis.csv")
+dados$metragem = as.numeric(dados$metragem)
 
 # 2 - Gráficos:
 #(Preencher na branch Gráficos)
 #Faça um histograma da metragem
 
 # 3 - Medidas:
-# (Preencher na branch Medidas)
-#Calcule média, medina e desvio-padrão de imposto anual
+media_imposto_anual = mean(dados$imposto_anual)
+desvio_padrao_imposto_anual = sd(dados$imposto_anual)
+mediana_imposto_anual = median(dados$imposto_anual)
