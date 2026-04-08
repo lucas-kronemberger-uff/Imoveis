@@ -4,9 +4,7 @@ dados = read.csv2("imoveis.csv")
 dados$metragem = as.numeric(dados$metragem)
 
 # 2 - Gráficos:
-#(Preencher na branch Gráficos)
-#Faça um histograma da metragem
-
+hist(dados$metragem)
 # 3 - Medidas:
 media_imposto_anual = mean(dados$imposto_anual)
 desvio_padrao_imposto_anual = sd(dados$imposto_anual)
